@@ -1,4 +1,4 @@
-import 'package:albazen_test/introduction_screens/introduction_screen.dart';
+import 'package:albazen_test/Screens/introduction_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
