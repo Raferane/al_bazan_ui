@@ -16,8 +16,11 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
   // Custom bottom sheet function
   void showCustomBottomSheet(BuildContext context) {
     showModalBottomSheet(
+      enableDrag: true,
       context: context,
-      isScrollControlled: true,
+      scrollControlDisabledMaxHeightRatio: 1,
+      isDismissible: true,
+      isScrollControlled: false,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(25.0)),
       ),
@@ -25,7 +28,7 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
         expand: false,
         initialChildSize: 0.4,
         minChildSize: 0.2,
-        maxChildSize: 0.8,
+        maxChildSize: 0.4,
         builder: (_, controller) => SingleChildScrollView(
           controller: controller,
           child: const CustomBottomSheetContent(),
@@ -88,8 +91,9 @@ class _IntroductionScreenState extends State<IntroductionScreen> {
                 controller: _pageController,
                 count: 2,
                 effect: const WormEffect(
-                  dotColor: Colors.grey,
-                  activeDotColor: Colors.amber, // Gold color for active dot
+                  dotColor: Colors.white70,
+                  activeDotColor: Color.fromARGB(
+                      255, 202, 151, 0), // Gold color for active dot
                 ),
               ),
             ),

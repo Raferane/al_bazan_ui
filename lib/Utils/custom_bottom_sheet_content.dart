@@ -48,7 +48,7 @@ class CustomBottomSheetContent extends StatelessWidget {
                   // Navigate to the main app
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.orange,
+                  backgroundColor: const Color.fromARGB(255, 202, 151, 0),
                   padding: const EdgeInsets.symmetric(
                       horizontal: 24.0, vertical: 12.0),
                   shape: RoundedRectangleBorder(

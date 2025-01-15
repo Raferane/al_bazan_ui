@@ -31,7 +31,8 @@ Widget buildPage({
         ElevatedButton(
           onPressed: onPressed,
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.amber, // Gold color
+            backgroundColor:
+                const Color.fromARGB(255, 202, 151, 0), // Gold color
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8.0),
             ),
